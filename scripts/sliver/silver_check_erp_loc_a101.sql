@@ -1,0 +1,15 @@
+---- check cid
+--SELECT REPLACE(cid, '-', '') AS cid ,
+--cntry
+--FROM DataWarehouse.silver.erp_loc_a101
+--WHERE REPLACE(cid,'-','') NOT IN (SELECT cst_key FROM silver.crm_cust_info)
+---- check cntry
+--SELECT DISTINCT cntry
+--FROM silver.erp_loc_a101
+--ORDER BY cntry
+--SELECT cid ,
+--CASE WHEN TRIM(cntry) = 'DE' THEN 'Germnay'
+--WHEN TRIM(cntry) IN ('US', 'USA') THEN 'United States'
+--WHEN TRIM(cntry) = '' OR cntry IS NULL THEN 'N/A'
+--END AS cntry
+--FROM DataWarehouse.silver.erp_loc_a101
