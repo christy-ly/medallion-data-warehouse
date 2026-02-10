@@ -25,6 +25,9 @@ This project is a comprehensive data warehousing and analytics solution that dem
 - **Documentation**: Create clear and structured data model documentation for business users and analytics teams.
 
 ### 🧱 Data Architecture (Medallion Architecture)
+![architecture](https://github.com/christy-ly/medallion-data-warehouse/blob/main/docs/architecture.jpg)
+
+
 | Item | 🥉 Bronze Layer | 🥈 Silver Layer | 🥇 Gold Layer |
 |-----|---------------|---------------|--------------|
 | **Purpose** | Raw data ingestion | Cleaned and standardized data | Analytics-ready data |
