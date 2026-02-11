@@ -32,12 +32,13 @@ This project is a comprehensive data warehousing and analytics solution that dem
 |-----|---------------|---------------|--------------|
 | **Purpose** | Raw data ingestion | Cleaned and standardized data | Analytics-ready data |
 | **Data Source** | Source systems | Bronze layer | Silver layer |
-| **Transformations** | Minimal or none | Cleansing, standardization | Business aggregations |
-| **Data Quality** | Not enforced | Deduplication and validation | Fully validated |
-| **Schema / Model** | Mirrors source data | Refined relational schema | Star schema |
+| **Object Type** | Table | Table | View |
+| **Load Method** | Full Load (Truncate & Insert) | Full Load (Truncate & Insert) | None (views only) |
+| **Transformations** | Minimal or none | • Data cleansing<br>• Data standardization<br>• Data normalization<br>• Derived columns<br>• Data enrichment | • Data integration<br>• Data aggregations<br>• Business logic and rules |
+| **Schema / Model** | None (as-is) | None (as-is) | • Star schema<br>• Aggregated objects<br>• Flat tables |
 | **Tables** | Raw tables | Cleaned tables | Fact and Dimension tables |
+| **Data Quality** | Not enforced | Deduplication and validation | Fully validated |
 | **Optimization** | None | Moderate | Optimized for reporting |
-
 
 ### Part 2: Data Analysis & Business Intelligence (BI)
 - TBC
