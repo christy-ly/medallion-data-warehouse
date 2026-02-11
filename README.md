@@ -25,8 +25,9 @@ This project is a comprehensive data warehousing and analytics solution that dem
 - **Documentation**: Create clear and structured data model documentation for business users and analytics teams.
 
 ### 🧱 Data Architecture (Medallion Architecture)
-![architecture](https://github.com/christy-ly/medallion-data-warehouse/blob/main/docs/architecture.jpg)
+Describes how data is structured across Bronze, Silver, and Gold layers to support reliable analytics.
 
+![architecture](https://github.com/christy-ly/medallion-data-warehouse/blob/main/docs/high-level-architecture.jpg)
 
 | Item | 🥉 Bronze Layer | 🥈 Silver Layer | 🥇 Gold Layer |
 |-----|---------------|---------------|--------------|
@@ -40,10 +41,21 @@ This project is a comprehensive data warehousing and analytics solution that dem
 | **Data Quality** | Not enforced | Deduplication and validation | Fully validated |
 | **Optimization** | None | Moderate | Optimized for reporting |
 
-### Part 2: Data Analysis & Business Intelligence (BI)
-- TBC
+### 🔄 Data Flow
+Illustrates how data moves from source systems through the ETL pipeline into the Bronze, Silver, and Gold layers.
 
-  
+![data-flow](https://github.com/christy-ly/medallion-data-warehouse/blob/main/docs/data-flow.jpg)
+
+### 🧩 Data Integration (Silver Layer)
+Shows how data from multiple source systems is combined, cleaned, standardized, and aligned in the Silver layer to create trusted, analytics-ready datasets.
+
+![data-integration](https://github.com/christy-ly/medallion-data-warehouse/blob/main/docs/data-integration.jpg)
+
+### 🏗️ Data Model (Gold Layer)
+Represents the analytics-ready structure of the data in the Gold layer, including fact and dimension tables and views, optimized for reporting, dashboards, and business insights.
+
+![data-model](https://github.com/christy-ly/medallion-data-warehouse/blob/main/docs/data-model.jpg)
+
 ## 📂 Folder Structure
 ```
 medallion-data-warehouse/
